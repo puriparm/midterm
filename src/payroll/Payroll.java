@@ -20,15 +20,14 @@ public class Payroll
      /**constructor that takes the salary and employee name
       * 
       */
+  
    public Payroll(double Sal,String givenUser)
         {
             Salary=Sal;
-            emp=givenUser;
-                 
-        }
-      
-     
-    
-    
-    
+            emp=givenUser;}
+    public void SalaryComp(double Salary){
+       if(Salary<=3000){
+    Salary = Salary+(Salary*10);
+    }
+    }
 }
